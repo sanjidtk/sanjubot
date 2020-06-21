@@ -105,6 +105,12 @@ const main = async () => {
                 const fah = require('./tools/fhtauto.js');
                 await fah();
                 break;
+                
+             case "❆ L-C with Hashtag Target":
+                const fah = require('./tools/chtauto.js');
+                await fah();
+                break;
+   
 
             case "❆ F-L-C with Location Target":
                 const flaauto = require('./tools/fltauto.js');
