@@ -119,13 +119,13 @@ const doAction = async (session, params, text) => {
     var [ Like, Comment] = await Promise.all(task);
     Comment = Comment ? chalk `{bold.green SUKSES}` : chalk `{bold.red GAGAL}`;
     Like = Like ? chalk `{bold.green SUKSES}` : chalk `{bold.red GAGAL}`;
-    return chalk `[Follow: ${Follow}] [Like: ${Like}] [Comment: ${Comment} ({cyan ${text}})]`;
+    return chalk `[Follow: $  [Like: ${Like}] [Comment: ${Comment} ({cyan ${text}})]`;
 }
 
 const doMain = async (account, hastag, sleep, text, ittyw) => {
     console.log(chalk `{yellow \n? Try to Login . . .}`)
     account = await doLogin(account);
-    console.log(chalk `{bold.green ✓ Login Succsess}\n{yellow [?] Try to Follow, Like and Comment All Account In Hashtag: #${hastag}}`);
+    console.log(chalk `{bold.green ✓ Login Succsess}\n{yellow [?] Try to  Like and Comment All Account In Hashtag: #${hastag}}`);
     const feed = new Client.Feed.TaggedMedia(account.session, hastag);
     try {
         var cursor;
