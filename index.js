@@ -37,7 +37,7 @@ const questionTools = [{
         "❆ F-L with Followers Target",
         "❆ F-L-C with Followers Target",
         "❆ F-L-C with Media Target",
-        "❆ F-L-C with Hashtag Target",
+        "❆ L-C with Hashtag Target"
         "❆ F-L-C with Location Target",
         "\n"
     ]
@@ -107,12 +107,12 @@ const main = async () => {
                 break;
                 
              case "❆ L-C with Hashtag Target":
-                const fah = require('./tools/chtauto.js');
-                await fah();
+                const cah = require('./tools/chtauto.js');
+                await cah();
                 break;
    
 
-            case "❆ F-L-C with Location Target":
+             case "❆ F-L-C with Location Target":
                 const flaauto = require('./tools/fltauto.js');
                 await flaauto();
                 break;
